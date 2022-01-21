@@ -2,7 +2,7 @@
 
 > 깃허브 특강 3일 중 2일차 기록. 송채원.
 >
-> Gitignore와 Git Clone, Git Pull 학습함.
+> Gitignore와 Git Clone, Git Pull, Github Pages 학습함.
 
 
 
@@ -95,15 +95,52 @@ Saint/**/*.pdf #Saint 디렉토리 아래의 모든 .pdf 파일을 무시
 
 ## Git Clone
 
+(1)  __git clone__
+
+- 원격 저장소의 커밋 내역을 모두 가져와서 로컬 저장소를 생성하는 명령어.
+- `git clone` 명령어를 사용하면 원격 저장소를 통째로 복제하여 내 컴퓨터에 옮길 수 있다. 
+- `git clone <원격 저장소 주소>` 의 형태로 작성.
+
+- `git clone` 을 통해 생성된 로컬 저장소는 __`git init`과 `git remote add` 가 이미 수행되어 있다.__
+
+
+
+(2)  __git pull__
+
+- 원격 저장소의 변경 사항을 가져와서 로컬 저장소를 업데이트하는 명령어.
+- 로컬 저장소와 원격 저장소의 내용이 일치하면 git pull을 해도 변화가 없다.
+- `git pull <저장소 이름> <브랜치 이름>` 의 형태로 작성.
+  - eg. `git pull origin master`
+
+
+
+** 원격 저장소로부터 pull을 해야 하는 상황에서 로컬 저장소에서 commit을 먼저 해버리고, pull을 한다면?
+
+> 세 가지 경우의 수가 있다. 
+
+1. __서로 다른 파일을 수정__한 경우 --> 정상적으로 git pull 동작.
+2. __같은 파일의 다른 부분을 수정__한 경우 --> 정상적으로 git pull 동작.
+3. __같은 파일의 같은 부분을 수정__한 경우 --> __충돌 conflict__ 발생! 둘 중 어떤 수정사항을 반영할지 직접 선택하게 된다.  
+
+
+
+---
+
+### Github pages
+
+(1) github pages
+
+- github 원격 저장소를 이용해 손쉽게 __웹사이트를 배포__할 수 있는 기능.
+- 참고: https://pages.github.com/
+- Github -> Settings -> Pages 메뉴에서 Add a domain 하여 링크를 걸 수 있다. 
 
 
 
 
 
+_상당히 유용한 기능들을 이것저것 많이 배웠다._
 
-
-
-
+_앞으로 잊지 않도록 꾸준히 TIL을 올리는 등의 활동으로 git을 지속적으로 사용하면 좋을 것 같다._
 
 
 
