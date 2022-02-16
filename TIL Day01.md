@@ -189,6 +189,14 @@
 
 
 
+9. 짜투리 정보(git bash 특정 상황에서의 탈출)
+
+- git log, nano 편집기 나가기 : `q`
+- vi 편집기 나가기 : `wq _write and quit` (저장 후 나가기)
+- 서버 종료하기 : `ctrl+c` 
+
+
+
 ---
 
 ### Visual Studio Code
