@@ -163,14 +163,37 @@ ValueError: substring not found
 
 __번외: print()에 대해__
 
-- print() 는 출력의 명령어. sep과 end 인자의 값을 지정하여 다양하게 활용할 수 있다. 
+- print() 는 출력의 명령어. 여러 문자열을 출력할 때, 그 사이에 들어갈 값을 정하는 `sep`과 문자열 출력이 끝나고 입력될 값을 정하는`end` 인자의 값을 지정하여 다양하게 활용할 수 있다. 
 
 ```python
->>> print('Ilhyun', 'Wuyeon', 'Wujin', sep='\n')
+# default 값 수정 없이 사용
+>>> print('Ilhyun', 'Wuyeon', 'Wujin')
+Ilhyun Wuyeon Wujin
+
+
+# 기본값 sep = ' '(공백) --> sep = '\n' (줄 바꿈) 으로 변경
+>>> print('Ilhyun', 'Wuyeon', 'Wujin', sep = '\n')
 Ilhyun
 Wuyeon
 Wujin
 
+
+# end 의 기본값 수정 없이 사용 (디폴트 값은 줄바꿈이므로 한 줄 한 줄 출력됨)
+>>> for i in range(1):
+    print('Ilhyun')
+    print('Wuyeon')
+    print('Wujin')
+Ilhyun
+Wuyeon
+Wujin
+
+
+# 기본값 end = '\n' --> end = ' ' (공백) 으로 변경
+>>> for i in range(1):
+    print('Ilhyun', end = ' ')
+    print('Wuyeon', end = ' ')
+    print('Wujin', end = ' ')
+Ilhyun Wuyeon Wujin 
 
 ```
 
