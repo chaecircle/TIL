@@ -3,6 +3,8 @@
 > 파이썬 기초부터 정리하기 -4
 >
 > \>> 리스트 list 자료형
+>
+> \+ 알고리즘 문제 풀이
 
 
 
@@ -71,6 +73,122 @@ e = [1, 2, ['cake', 'cookies']]
 #### 리스트 연산하기
 
 ```python
->>> 
+# 리스트끼리의 덧셈
+>>> a = [1, 2, 3]
+>>> b = [4, 5, 6]
+>>> a + b
+[1, 2, 3, 4, 5, 6]
+
+# 리스트의 곱셈
+>>> a = [1, 2, 3]
+>>> a * 3
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+
 ```
+
+
+
+#### 리스트의 수정과 삭제
+
+```python
+# 인덱싱을 이용한 수정
+>>> a = [1, 2, 3]
+>>> a[2] = 4
+>>> a
+[1, 2, 4]
+
+# del 명령어를 이용한 삭제
+>>> names = ['차일현', '현우진', '장세진', '강석원', '조지현']
+>>> del names[1]
+>>> names
+['차일현', '장세진', '강석원', '조지현']
+
+```
+
+
+
+_리스트는 굉장히 빈번히 쓰이는 만큼 복습을 철저히 해야겠다. 자꾸 명령어들이 은근 헷갈려서 매번 쓸 때마다 구글링을 거치곤 했는데, 이번 기회에 확실히 잡고 넘어가자!_
+
+_독서모임에서 드디어 광기의 역사 책을 끝냈다. 다들 읽기 너무 어렵고 힘들었다고 토로하는 모습을 보며 뭔가 안심도 되고, 미안하기도 했다. ....내가 읽자고 먼저 제안해서 선정된 책이기 때문이다. 다음 책은 훨씬 읽기 재밌고 편한 책으로 선정하기로 했다. 어떤 책이 될까? 기대된다. \\(￣︶￣*\\)_
+
+
+
+---
+
+
+
+> 이전에 풀이한 알고리즘 문제를 오늘치에 올린다!
+
+```python
+# 백준 1000번
+a, b = map(int, input().split())
+print(a+b)
+
+# A+B -2
+a = int(input())
+b = int(input())
+print(a+b)
+
+# A+B -3
+t = int(input())
+
+while t > 0 :
+    a, b = map(int, input().split())
+    print(a+b)
+    t -= 1
+
+# 다른 풀이
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print(a+b)
+
+
+# A + B -6
+
+t =  int(input())
+
+for i in range(t):
+    a, b = map(int, input().split(','))
+    print(a+b)
+
+
+
+
+# A + B -7
+
+t = int(input())
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print('Case #{0}: {1}'.format(i+1,a+b))
+
+# 다른 풀이
+
+t = int(input())
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print(f"Case #{i + 1}: {a + b}")
+
+
+# A + B -8
+
+t = int(input())
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print('Case #{0}: {1} + {2} = {3}'.format(i+1, a, b, a+b))
+
+# 다른 풀이
+
+for i in range(t):
+    a, b = map(int, input().split())
+    print(f'Case #{i+1}: {a} + {b} = {a+b}')
+
+```
+
+
+
+
 
