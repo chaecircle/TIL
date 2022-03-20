@@ -3,6 +3,8 @@
 > 파이썬 기초부터 정리하기 -6
 >
 > \>> 튜플 tuple 자료형
+>
+> \+ 파이썬 기초 100제 풀기
 
 
 
@@ -123,6 +125,61 @@ TypeError: 'tuple' object does not support item assignment
 
 
 _튜플은 리스트에 비해 직접적으로 사용해본 적이 많지 않은데, 앞으로 좀 더 사용하여 익숙해지는 과정을 밟아야겠다._
+
+_오늘부터 파이썬 기초 100제를 차근차근 풀어봐야겠다~_
+
+---
+
+
+
+```python
+1. 기초 출력 문제
+
+# "Hello" 출력하기
+
+print('Hello')
+
+```
+
+```python
+2. 기초 출력 문제 2
+
+# "Hello World" 출력하기
+
+print('Hello World')
+```
+
+```python
+3. 기초 출력 문제 3
+
+''' "Hello 
+	 World ''' # 출력하기
+
+print('Hello')
+print('World')
+```
+
+```python
+4. 기초 출력 문제 4
+
+#'Hello' (작은 따옴표 포함) 출력하기
+
+print("'Hello'")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
