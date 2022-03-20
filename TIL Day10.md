@@ -75,27 +75,54 @@ TypeError: 'tuple' object does not support item assignment
 ('차일현', '권제혁', '윤승호', '차일현', '권제혁', '윤승호')
 ```
 
+- 튜플 길이 구하기
+
+```python
+>>> t1 = (1, 2, 3, 4, 5)
+>>> len(t1)
+5
+```
 
 
 
+#### 튜플 패킹과 언패킹
+
+- 튜플 생성과 할당의 또 다른 방법들!
+
+- 패킹 Packing
+
+```python
+>>> names = '나뭇가지', '가지가지'
+>>> names
+('나뭇가지', '가지가지')
+>>> type(names)
+<class 'tuple'>
+```
+
+- 언패킹 Unpacking
+
+```python
+>>> wood, stick = names
+>>> wood
+'나뭇가지'
+>>> stick
+'가지가지'
+```
+
+```python
+# 이런 방식으로 다수의 변수 할당을 한 줄로 작성할 수 있다!
+>>> name, age, job = '성현제', 38, 'sesung master'
+>>> name
+'성현제'
+>>> age
+38
+>>> job
+'sesung master'
+```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+_튜플은 리스트에 비해 직접적으로 사용해본 적이 많지 않은데, 앞으로 좀 더 사용하여 익숙해지는 과정을 밟아야겠다._
 
 
 
