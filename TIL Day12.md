@@ -115,6 +115,24 @@ print("\"Hello World\"")
 
 # "!@#$%^&*()' 출력하기 (따옴표 모두 포함)
 
+print('"!@#$%^&*()\'')
+
+```
+
+```python
+7. 출력하기 7
+
+# "C:\Download\'hello'.py" (단, 따옴표도 함께 출력한다.)
+
+print('"C:\\Download\\\'hello\'.py"')
+
+```
+
+```python
+8. 출력하기 8
+
+# print("Hello\nWorld") 그대로 출력하기 
+
 
 
 ```
