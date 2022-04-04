@@ -85,7 +85,7 @@
 
 
 
-_오늘의 느낀 점_
+_파이썬에서 집합 기능은 거의 사용한 적이 없는데, 어떤 경우에 어떻게 활용할지 실례를 좀 더 알아봐야 할 것 같다._
 
 
 
@@ -133,8 +133,7 @@ print('"C:\\Download\\\'hello\'.py"')
 
 # print("Hello\nWorld") 그대로 출력하기 
 
-
-
+print('print("Hello\\nWorld")')
 ```
 
 
